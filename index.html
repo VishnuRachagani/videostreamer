@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Video Streaming</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: #f0f2f5;
+            color: #333;
+        }
+        h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #555;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #666;
+        }
+        video {
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 100%;
+        }
+        i {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <h2>HTTP Video Streaming</h2>
+    <p>This Project is designed to stream local video. The video below is SpiderMan PS5 game official trailer!</p>
+    <p>Feel free to seek through the video; it only loads the part you want to watch.</p>
+    <video id="videoPlayer" controls muted autoplay>
+        <source src="/video" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <i>SpiderMan PS5</i>
+</body>
+</html>
